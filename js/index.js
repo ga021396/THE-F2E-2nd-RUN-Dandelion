@@ -5,6 +5,9 @@ const config = {
   parent: "app",
   physics: {
     default: "arcade",
+    arcade: {
+      debug: true,
+    },
   },
   scene: [scene],
 };
