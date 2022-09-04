@@ -36,12 +36,12 @@ const scene = {
     this.physics.add.collider(this.bull, this.rock, hittest);
   },
   update: function () {
-    // const rockX = this.rock.x;
-    // const rockY = this.rock.y;
-    // const playerX = this.player.x;
-    // const playerY = this.player.y;
-    // const rotation = Phaser.Math.Angle.Between(rockX, rockY, playerX, playerY);
-    // this.rock.setRotation(rotation);
+    const rockX = this.rock.x;
+    const rockY = this.rock.y;
+    const playerX = this.player.x;
+    const playerY = this.player.y;
+    const rotation = Phaser.Math.Angle.Between(rockX, rockY, playerX, playerY);
+    this.rock.setRotation(rotation);
 
     //  move zob
     const rockX = this.rock.x;
