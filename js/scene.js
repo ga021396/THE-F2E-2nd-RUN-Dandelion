@@ -2,6 +2,7 @@ const scene = {
   key: "gameStart",
   preload: function () {
     this.load.image("bg4", "images/bg/bg4.png");
+    this.load.image("footer", "images/bg/footer.png");
     this.load.image("rock1", "images/item-level-1-rock.png");
     this.load.image("rock2", "images/item-level-2-smoke-sm.png");
     this.load.spritesheet("user", "images/player.png", {
@@ -12,6 +13,7 @@ const scene = {
 
   create: function () {
     this.bg4 = this.add.tileSprite(400, 225, cw, ch, "bg4");
+    this.footer = this.add.tileSprite(400, 225, cw, 100, "footer");
     this.rock = this.physics.add.sprite(100, 200, "rock1");
     this.player = this.physics.add.sprite(600, 300, "user");
     this.bull = this.physics.add.sprite(0, 0, "rock2");
